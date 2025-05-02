@@ -13,6 +13,7 @@
   article {
     grid-template-columns: repeat(3, 1fr);
   }
+  
   [tag="Qwirty"] {
     padding-right: 63px;
   }
@@ -41,8 +42,19 @@
 
 
 @media (width < 720px) {
+    [tag="Qwirty"] {
+    margin-bottom: 15px;
+    padding-right: 0;
+    align-self: center;
+  }
+  
+  [alt="MenuIcon"] {
+      padding: 0;
+  }
+  
   article {
     grid-template-columns: repeat(2, 1fr);
+    padding: 40px 0;
   }
 
   aside {
@@ -55,9 +67,10 @@
   }
 
   header {
-    margin: 10px;
+    padding: 0 10px;
+    margin: 10px 0;
   }
-
+  
   header,
   header div,
   footer {
@@ -66,12 +79,11 @@
 
   header div {
     padding: 0;
-    margin: 10px 0 0 0;
+    margin: 0;
   }
-
-  [tag="Qwirty"] {
-    padding-right: 0;
-    align-self: center;
+  
+  footer {
+    gap: 0;
   }
 }
 
@@ -79,4 +91,5 @@
   article {
     grid-template-columns: repeat(1, 1fr);
   }
+  
 }
