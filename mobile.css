@@ -1,0 +1,82 @@
+/* MOBILE STARTS HERE */
+
+@media (width < 1200px) {
+  article {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  [tag="Qwirty"] {
+    padding-right: 63px;
+  }
+}
+
+@media (width < 970px) {
+  article {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  [tag="Qwirty"] {
+    padding-right: 63px;
+  }
+}
+
+@media (width < 980px) {
+  article {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width < 730px) {
+  article {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  nav div:nth-of-type(2) a,
+  [alt="CartIcon"] {
+    display: none;
+  }
+
+  [alt="MenuIcon"] {
+    display: block;
+  }
+}
+
+
+@media (width < 720px) {
+  article {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  header {
+    margin: 10px;
+  }
+
+  header,
+  header div,
+  footer {
+    flex-direction: column;
+  }
+
+  header div {
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+
+  [tag="Qwirty"] {
+    padding-right: 0;
+    align-self: center;
+  }
+}
+
+@media (width < 507px) {
+  article {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
