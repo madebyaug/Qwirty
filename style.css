@@ -1,0 +1,224 @@
+/* REMOVE DEFAULT STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-weight: normal;
+  border: none;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* DESKTOP STARTS HERE */
+
+nav a:hover,
+footer a:hover,
+.CTA a:hover {
+  text-decoration: underline;
+}
+
+header,
+header > div,
+footer,
+nav,
+nav div,
+ul,
+article,
+article .price,
+form,
+button {
+  display: flex;
+}
+
+ul {
+  flex-direction: column;
+}
+
+[alt="water"] {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+[alt="CartIcon"],
+[alt="SearchIcon"],
+[alt="addCartIcon"],
+[alt="MenuIcon"] {
+  height: 20px;
+}
+
+[alt="MenuIcon"] {
+  display: none;
+  filter: invert(100%);
+}
+
+[tag="Qwirty"] {
+  font-family: "PT Serif Caption", serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  color: #4444b4;
+  padding-right: 53px;
+}
+
+.price button {
+  border-radius: 30px;
+}
+
+article {
+  grid-area: article;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+article > div,
+div.price,
+input,
+form,
+header > div {
+  flex-grow: 1;
+}
+
+article > div,
+div.price,
+nav {
+  justify-content: space-between;
+}
+
+article img + p {
+  color: black;
+  padding: 10px;
+}
+
+article h1,
+article .price {
+  padding: 16px 10px;
+}
+
+aside {
+  grid-area: aside;
+  width: 200px;
+}
+
+aside li {
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+aside li:hover,
+.price button {
+  background-color: #228;
+  cursor: pointer;
+}
+
+body {
+  background-color: #eee;
+  height: 100%;
+}
+
+button {
+  padding: 8px;
+}
+
+footer {
+  grid-area: footer;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px 0;
+}
+
+footer h2 {
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid white;
+}
+
+header {
+  margin: 10px 10px 20px;
+}
+
+header .CTA {
+  background-color: #d40808;
+  padding: 10px;
+}
+
+input {
+  border-bottom: 1px solid #4444b4;
+  padding: 0 10px;
+}
+
+ul {
+  gap: 3px;
+}
+
+main {
+  height: auto;
+  display: grid;
+  grid-template-areas: "aside article";
+}
+
+nav,
+[tag="Qwirty"],
+nav div *,
+button,
+.price {
+  align-content: center;
+  align-items: center;
+}
+
+nav,
+footer,
+aside li,
+button,
+article h1,
+article .price,
+.price button:hover {
+  background-color: #4444b4;
+}
+
+nav div {
+  padding: 0 10px;
+  height: 100%;
+}
+
+nav div :first-child {
+  padding-left: 0;
+}
+
+nav div :last-child,
+body header > div {
+  padding-right: 0;
+}
+
+nav div * {
+  margin: 10px 0;
+  padding: 0 5px;
+}
+
+main,
+header > div,
+footer div {
+  padding: 0 10px;
+  margin: 10px 0;
+  gap: 10px;
+}
+
+nav a + * {
+  border-left: 1px solid white;
+}
+
+/* DESKTOP SIDE PADDING */
+
+@media (width > 1200px) {
+  body header,
+  body main,
+  body nav {
+    padding: 0 8%;
+  }
+}
